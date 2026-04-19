@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0B0F19;
+  /* Deep Dark Blue/Black */
+  --color-secondary: #151A2D;
+  /* Slightly lighter dark */
+  --color-accent: #FF007F;
+  /* Neon Pink */
+  --color-accent-glow: #FF1493;
+  /* Deep Pink */
+  --color-cyan: #00F0FF;
+  /* Neon Cyan */
+  --color-text: #f8fafc;
+  --color-text-muted: #94a3b8;
+
+  --font-sans: "Inter", sans-serif;
+
+  --animate-spin-slow: spin 8s linear infinite;
+  --animate-float: float 6s ease-in-out infinite;
+
+  @keyframes float {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+}
+
+/* Lenis Styles */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: color-mix(in srgb, var(--color-accent), transparent 50%);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-accent);
+}
