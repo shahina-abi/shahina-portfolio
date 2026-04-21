@@ -262,6 +262,29 @@ const projectsData = [
     Icon: Flower,
     highlight: false,
   },
+  {
+    title: "TaskTracker – AI Study Planner",
+    subtitle: "MERN Stack · JWT Auth · OpenRouter AI",
+    description:
+      "AI-powered student productivity app with smart task management, daily planning, reminders, weekly insights, Pomodoro focus sessions, streak tracking, and calendar-based deadline management.",
+    tech: [
+      "MongoDB",
+      "Express.js",
+      "React.js",
+      "Node.js",
+      "Tailwind CSS",
+      "Axios",
+      "JWT",
+      "OpenRouter API",
+      "Recharts",
+    ],
+    github: "https://github.com/shahina-abi/task-tracker",
+    demo: "https://task-tracker-inky-pi.vercel.app/",
+    badge: "AI · MERN · Live",
+    badgeColor: "from-violet-500 to-indigo-500",
+    Icon: ClipboardList,
+    highlight: true,
+  },
 ];
 
 const Projects = () => {
