@@ -158,6 +158,7 @@ import {
   Briefcase,
   Utensils,
   Flower,
+  ClipboardList,
 } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
